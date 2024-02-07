@@ -1,0 +1,172 @@
+@font-face {
+    font-family: 'linotte';
+    src: url('linotteregular.otf')
+}
+
+@font-face {
+    font-family: 'linottebold';
+    src: url('linottesemibold.otf')
+}
+
+@font-face {
+    font-family: 'linottelight';
+    src: url('linottelight.otf');
+}
+
+@font-face {
+    font-family: 'authorfont';
+    src: url('sourceserifpro-regular.ttf');
+}
+
+
+
+.card {
+    /* Add shadows to create the "card" effect */
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    border-radius: 5px 5px 5px 5px;
+    border: 0.1px solid grey;
+    transition: 0.3s;
+    height: 50%;
+    width: 18rem;
+    margin-right: 40px;
+    font-family: 'linotte';
+    font-size: 16px;
+    padding: 3px;
+    overflow: hidden;
+}
+
+.author {
+    color: #A7A7A8;
+    font-size: 12px;
+    font-family: authorfont;
+    display: inline-block;
+}
+
+.author2 {
+    color: #A7A7A8;
+    font-size: 16px;
+    font-family: authorfont;
+    display: inline-block;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+.card-container {
+    display: flex;
+    padding: 20px;
+    clear: right;
+    justify-content: center;
+    margin-bottom: 1rem;
+    margin-top: 5rem
+}
+
+.textcard {
+    width: 60rem;
+    height: 20rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-left: 20rem;
+    z-index: 1;
+    top: 50px;
+    left: 50px;
+}
+
+img {
+    filter: brightness(70%);
+}
+
+.heading {
+    margin-left: 14rem;
+    font-family: linottebold;
+}
+
+h4 {
+    font-family: linottebold;
+    font-size: 20px;
+    margin: 10px 10px 0 0
+}
+
+.image {
+    width: 100%;
+    background-size: cover;
+    background-position: center top;
+    /* Adjust this to control which part of the image is visible */
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.small {
+    font-size: 10px;
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+}
+
+.article {
+    font-size: 10px;
+    display: inline-block;
+    font-family: 'linottelight';
+    padding: 5px;
+    color: grey;
+    border-radius: 5px;
+}
+
+
+.text {
+    position: absolute;
+    border-radius: 5px;
+    top: 3rem;
+    /* Adjust as needed */
+    left: 17rem;
+    /* Adjust as needed */
+    background-image: linear-gradient(to bottom, #23748D, #60A29D);
+    color: white;
+    font-family: 'linotte';
+    /* Semi-transparent white background */
+    padding: 8px;
+    z-index: 2;
+    width: 30%;
+
+    /* Ensure it's above the image */
+}
+
+.card-container2 {
+    position: relative
+}
+
+.bobtail {
+    position: relative;
+    /* Required for z-index to work */
+    z-index: 1;
+    /* Ensure it's behind the text */
+    max-width: 30%;
+    height: auto;
+    float: right;
+    margin-bottom: 3rem;
+    margin-right: 20rem;
+}
+
+.recent {
+    font-family: linottebold;
+    text-decoration: underline;
+    color: #4F0B05;
+    text-align: right;
+    margin-right: 16rem;
+
+}
+
+.recent img {
+    width: 15px;
+    height: 15px;
+    color: purple;
+    margin-left: 0.3rem;
+    vertical-align: middle;
+}
